@@ -108,3 +108,12 @@ class TvDVD extends Tv {
         dvd.ff();
     }
 }
+
+class add {
+    void print() {
+        System.out.println("commit : ctrl + k");
+        System.out.println("깃 commit 테스트");
+        System.out.println("push : ctrl + shift + k");
+        System.out.println("깃 push 테스트");
+    }
+}
