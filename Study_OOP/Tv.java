@@ -1,5 +1,6 @@
 package Study_OOP;
 
+
 public class Tv {  // 설계도
     // 인스턴스 변수(iv) : 클래스 영역에서 선언, 인스턴스가 생성될 때 마다 iv가 새로 생성
     String color;   // null
