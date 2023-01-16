@@ -56,6 +56,21 @@ class Buyer {
         System.out.println(Arrays.toString(cart));
         System.out.println(p + "을/를 구입하셨습니다.");
     }
+
+    void summary() {
+        int sum = 0;
+        String itemList = "";
+
+        for(int i=0; i<cart.length; i++) {
+            if(cart[i] == null) {
+                break;
+            }
+            sum += cart[i].price;
+            itemList += cart[i] + ", ";
+        }
+        System.out.println("구입하신 물품의 총 금액은 " + sum + "만원입니다.");
+        System.out.println("구입하신 제품은 " + itemList + "입니다.");
+    }
 }
 
 public class oop_12 {
@@ -66,6 +81,7 @@ public class oop_12 {
         // 하나의 메서드로 매개변수를 여러 개 받을 수 있음
         b.buy(new Tv1());           // buy(Product p)
         b.buy(new Computer());      // buy(Product p)
+        b.summary();
 
         System.out.println("현재 남은 돈은 " + b.money + "만원입니다.");
         System.out.println("현재 보너스 점수는 " + b.bonusPoint + "점입니다.");
